@@ -162,7 +162,7 @@
 </head>
 <body>
 
-<header>PingüiCartas Pro 🐧❄️</header>
+<header>PingüiCartas 🐧❄️</header>
 
 <div id="editor">
     <h3>1. Escribe tu mensaje</h3>
@@ -193,7 +193,7 @@
 </div>
 
 <div id="botonesFinales" style="display:none; padding-bottom: 50px;">
-    <button onclick="descargarPDF()" style="background: #4ab3ff;">Descargar PDF Pro 📄</button>
+    <button onclick="descargarPDF()" style="background: #4ab3ff;">Descargar PDF 📄</button>
     <button onclick="compartir()" style="background: #25D366;">Compartir / WhatsApp 📲</button>
     <button onclick="location.reload()" style="background: #999;">Crear Otra</button>
 </div>
@@ -278,10 +278,11 @@
 
         function decoracion(p) {
             p.setDrawColor(255, 111, 176);
+            p.setLineWidth(2);
             p.rect(10, 10, 190, 277);
             p.setFont("helvetica", "bold");
             p.setFontSize(20);
-            p.text("Pinguicarta Pro", 105, 25, { align: "center" });
+            p.text("Pinguicarta", 105, 25, { align: "center" });
         }
 
         decoracion(doc);
@@ -302,7 +303,7 @@
         doc.setTextColor(150);
         doc.text("Enviado con amor desde el Polo Norte virtual", 105, 282, { align: "center" });
         
-        doc.save("Pinguicarta_Final.pdf");
+        doc.save("Mi_Pinguicarta_Romantica.pdf");
     }
 </script>
 
